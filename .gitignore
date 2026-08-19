@@ -1,0 +1,33 @@
+# 排除项 / 忽略
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 数据（真实业务数据不进仓库）
+data/
+*.jsonl
+*.sqlite
+
+# 账户配置（含敏感 ID）
+config.json
+config.yaml
+*.local.json
+
+# 备份与临时文件
+*.bak
+*.bak-*
+tmp_*
+*.tmp
+read_out.tmp
+
+# 看板静态产物（由服务动态生成）
+web/tmp_*
+web/vendor/
+
+# 日志
+logs/
+*.log
