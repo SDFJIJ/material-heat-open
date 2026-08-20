@@ -7,9 +7,12 @@ __pycache__/
 .venv/
 venv/
 
-# 数据（真实业务数据不进仓库）
-data/
+# 数据默认不进仓库；仅显式发布的 exports 目录例外
+data/*
+!data/exports/
+!data/exports/**
 *.jsonl
+!data/exports/**/*.jsonl
 *.sqlite
 
 # 账户配置（含敏感 ID）
